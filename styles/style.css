@@ -173,11 +173,9 @@ body {
 
 .shoes__explore {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  margin-top: 2rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
 }
 
 .shoes__explore > div {
@@ -444,4 +442,11 @@ body {
 .footer p {
   margin: 0;
   font-size: 1rem;
+}
+
+.shoes__explore a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px;
+    margin-bottom: 40px;
 }

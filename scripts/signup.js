@@ -43,4 +43,10 @@ function loadSubscriberName() {
     }
 }
 
+function scrollToShoes() {
+    document.querySelector('.shoes__section').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+}
+
 window.onload = loadSubscriberName;
