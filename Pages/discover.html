@@ -9,21 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css" />
     <script  src="../scripts/signup.js" ></script>
+    <script src="../scripts/shoes.js"></script>
+    <script src="../scripts/search.js"></script>
+
 </head>
 <body>
     <section class="main__body">
         <div class="header">
             <div class="logo-title">
-                <a href="index.html">
-                    <img
-                        width="50"
-                        height="50"
-                        src="https://i.pinimg.com/originals/00/08/11/0008115b9b25e0bdfa0fce0c538cc75e.png"
-                    />
-                </a>
-                <p>STEP ON</p>
+              <a href="index.html">
+                <img
+                  width="50"
+                  height="50"
+                  src="https://i.pinimg.com/originals/00/08/11/0008115b9b25e0bdfa0fce0c538cc75e.png"
+                />
+              </a>
+              <p>STEP ON</p>
             </div>
             <p id="welcome" style="opacity: 0; transition: opacity 0.5s;">Welcome!</p>
+  
+      
+          
+          <ul class="ll">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="our_story.html">Our Story</a></li>
+            <li><a href="#userform">Contact Us</a></li>
+          </ul>
         </div>
         <div class="discover__section">
             <div>
@@ -32,51 +44,57 @@
             </div>
             <div class="collection">
                 <div class="collection__section">
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
+                    <script>
+    const shoesContainer = document.getElementById('shoes-container');
+
+// Dynamically generate the shoe items
+shoesData.forEach((brand) => {
+  brand.items.forEach((shoe) => {
+    const shoeElement = document.createElement("a");
+    shoeElement.href = "show_item.html";  // Redirect to show_item page
+
+    shoeElement.addEventListener("click", () => {
+      // Store shoe data in localStorage when clicked
+      localStorage.setItem("shoeData", JSON.stringify(shoe));
+    });
+
+    shoeElement.innerHTML = `
+      <div class="shoe-item">
+        <img width="250" height="250" src="${shoe.image}" alt="${shoe.name}" />
+        <div class="pricing">
+          <p>${shoe.name}</p>
+          <span>${shoe.price}</span>
+        </div>
+      </div>
+    `;
+
+    shoesContainer.appendChild(shoeElement);
+  });
+});
+
+// Search functionality
+const searchBar = document.getElementById('search-bar');
+searchBar.addEventListener('input', function() {
+  const query = searchBar.value.toLowerCase();
+  const items = shoesContainer.getElementsByClassName('shoe-item');
+  
+  for (let item of items) {
+    const name = item.querySelector('p').textContent.toLowerCase();
+    if (name.includes(query)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  }
+});
+                      </script>
+                      <div class="template" style="display: none;">
+                        <img width="250" height="250" src="" alt="Shoe image" />
                         <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
+                          <p class="shoe-name">Shoe Name</p>
+                          <span class="shoe-price">Price</span>
                         </div>
-                    </div>
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
-                        <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
-                        <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
-                        <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
-                        <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img width="250" height="250" src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp" />
-                        <div class="pricing">
-                            <p>Nike Blue 20</p>
-                            <span>25 BD</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter">
-                    <p>Filter</p>
+                      </div>
                 </div>
             </div>
         </div>

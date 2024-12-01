@@ -11,34 +11,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../scripts/signup.js" ></script>
+    <script src="../scripts/signup.js"></script>
+    <script src="../scripts/shoes.js"></script>
   </head>
   <body>
     <section class="main__body">
-  
-        <div class="header">
-          <div class="logo-title">
-            <a href="index.html">
-              <img
-                width="50"
-                height="50"
-                src="https://i.pinimg.com/originals/00/08/11/0008115b9b25e0bdfa0fce0c538cc75e.png"
-              />
-            </a>
-            <p>STEP ON</p>
-          </div>
-          <p id="welcome" style="opacity: 0; transition: opacity 0.5s;">Welcome!</p>
+      <div class="header">
+        <div class="logo-title">
+          <a href="index.html">
+            <img
+              width="50"
+              height="50"
+              src="https://i.pinimg.com/originals/00/08/11/0008115b9b25e0bdfa0fce0c538cc75e.png"
+            />
+          </a>
+          <p>STEP ON</p>
+        </div>
+        <p id="welcome" style="opacity: 0; transition: opacity 0.5s">
+          Welcome!
+        </p>
 
-    
-        
         <ul class="ll">
           <li><a href="index.html">Home</a></li>
-          <li><a href="show_item.html">Discover</a></li>
+          <li><a href="discover.html">Discover</a></li>
           <li><a href="our_story.html">Our Story</a></li>
           <li><a href="#userform">Contact Us</a></li>
         </ul>
       </div>
-      
+
       <div class="hero">
         <img
           src="https://file.aiquickdraw.com/imgcompressed/img/compressed_f8769206cd169f1edea6929c085e5cc1.webp"
@@ -47,134 +47,106 @@
         <div>
           <h1>Buy Shoes NOW!</h1>
           <p>
-            Step into style and comfort with our premium collection of footwear. From casual sneakers 
-            to athletic performance shoes, we offer the latest designs from top brands at competitive 
-            prices. Our expert staff will help you find the perfect fit for your lifestyle and budget.
-            Visit us today to discover your next favorite pair of shoes!
+            Step into style and comfort with our premium collection of footwear.
+            From casual sneakers to athletic performance shoes, we offer the
+            latest designs from top brands at competitive prices. Our expert
+            staff will help you find the perfect fit for your lifestyle and
+            budget. Visit us today to discover your next favorite pair of shoes!
           </p>
           <div class="buttons_control">
-            <button class="button button-primary" onclick="scrollToShoes()">Explore More</button>
+            <button class="button button-primary" onclick="scrollToShoes()">
+              Explore More
+            </button>
           </div>
         </div>
       </div>
-      
     </section>
     <section class="shoes__section">
       <div class="shoes_main">
         <h1>Explore Shoes</h1>
         <input class="input__search" placeholder="Search of item.." />
-        <div class="shoes__explore">
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-          <a href="show_item.html">
-            <div>
-              <img
-                width="250"
-                height="250"
-                src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
-              />
-              <div class="pricing">
-                <p>Nike Blue 20</p>
-                <span>25 BD</span>
-              </div>
-            </div>
-          </a>
-        </div>
+        <div id="shoes__explore" class="shoes__explore"></div>
       </div>
     </section>
-    <div id="userform">
-        <form id="user-form" onsubmit="return validateSubscriptionForm();">
-            <h2>Register</h2>
-    
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-    
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
-    
-            <label for="mobileNo">Mobile No:</label>
-            <input type="text" id="mobileNo" name="mobileNo" placeholder="Enter your mobile number" required>
-    
-            <label for="form-email">E-mail:</label>
-            <input type="email" id="form-email" name="form-email" placeholder="Enter your email" required>
-            
-    
-            <div id="container">
-                <button id="las" type="submit">Submit</button>
-            </div>
-    
-        </form>
-          </div>
 
-          <footer class="footer">
-            <div class="footer-content">
-              <p>© 2024. All rights reserved.</p>
-              <p>Authors: Rawan, Zahra, Ahmed, Ali</p>
+    <script>
+      const shoesContainer = document.getElementById("shoes__explore");
+
+      shoesData.forEach((brand) => {
+        brand.items.forEach((shoe) => {
+          const shoeElement = document.createElement("a");
+          localStorage.setItem("shoeData", JSON.stringify(shoe));
+
+          shoeElement.href = "show_item.html";
+          shoeElement.addEventListener("click", () => {
+            localStorage.setItem("shoeData", JSON.stringify(shoe));
+          });
+          shoeElement.innerHTML = `
+            <div>
+              <img width="250" height="250" src="${shoe.image}" alt="${shoe.name}" />
+              <div class="pricing">
+                <p>${shoe.name}</p>
+                <span>${shoe.price}</span>
+              </div>
             </div>
-          </footer>
-          
+          `;
+
+          shoesContainer.appendChild(shoeElement);
+        });
+      });
+    </script>
+
+    <div id="userform">
+      <form id="user-form" onsubmit="return validateSubscriptionForm();">
+        <h2>Register</h2>
+
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter your first name"
+          required
+        />
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Enter your last name"
+          required
+        />
+
+        <label for="mobileNo">Mobile No:</label>
+        <input
+          type="text"
+          id="mobileNo"
+          name="mobileNo"
+          placeholder="Enter your mobile number"
+          required
+        />
+
+        <label for="form-email">E-mail:</label>
+        <input
+          type="email"
+          id="form-email"
+          name="form-email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <div id="container">
+          <button id="las" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024. All rights reserved.</p>
+        <p>Authors: Rawan, Zahra, Ahmed, Ali</p>
+      </div>
+    </footer>
   </body>
 </html>
