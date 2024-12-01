@@ -52,6 +52,9 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .header .left-content {
@@ -458,4 +461,10 @@ body {
 
 .ll a:hover {
     text-decoration: underline;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
