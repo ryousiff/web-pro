@@ -25,6 +25,8 @@ function validateSubscriptionForm() {
 
     
     displayGreeting(subscriberFirstName, subscriberLastName);
+
+    alert("You have been successfully registered!");
     
     return true; 
 }
