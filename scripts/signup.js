@@ -32,7 +32,8 @@ function validateSubscriptionForm() {
 }
 
 function displayGreeting(firstName, lastName) {
-    var greetingMsg = "Welcome " + firstName + " " + lastName + " !";
+    var greetingMsg = "Hey, " + firstName + " " + lastName + " !";
+    document.getElementById('welcome_avatar').style.display = "block"
     document.getElementById('welcome').innerText = greetingMsg;
     document.getElementById('welcome').style.opacity = 1;
 }

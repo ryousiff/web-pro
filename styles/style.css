@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-  background-color: rgb(241, 241, 241);
+  background-color: rgba(241, 241, 241, 0.7);
   padding: 1rem 2rem;
   border-radius: 5px;
   box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.052);
@@ -52,9 +52,10 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  display: flex;
   align-items: center;
   gap: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header .left-content {
@@ -91,7 +92,7 @@ body {
 }
 
 .hero {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,17 +104,18 @@ body {
 }
 
 .hero > div {
-  width: 45%;
+  width: 50%;
 }
 
 .hero > div > h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .hero > div > p {
-  font-size: 1.4rem;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-top: 2px;
   color: #898a8f;
+  width: 85%;
 }
 
 .buttons_control {
@@ -121,7 +123,7 @@ body {
 }
 
 .buttons_control > button:first-child {
-  background-color: #444444;
+  background-color: #4c54f3;
   color: #fff;
   padding: 1rem;
   padding-inline: 2rem;
@@ -150,6 +152,7 @@ body {
 
 .shoes_main > h1 {
   font-size: 2.5rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -493,4 +496,14 @@ body {
 .collection__section a {
     text-decoration: none;
     color: inherit;
+}
+
+.avatar_body {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+#welcome_avatar {
+  display: none;
 }
