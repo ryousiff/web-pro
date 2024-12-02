@@ -489,3 +489,8 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+.collection__section a {
+    text-decoration: none;
+    color: inherit;
+}

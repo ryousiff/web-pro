@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Project - Customer Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/signup.js"></script>
+    <style>
+      .stories-container {
+        padding: 2rem;
+        margin-top: 80px;
+      }
+
+      .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .story-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .story-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .customer-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .customer-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 1rem;
+        object-fit: cover;
+      }
+
+      .customer-name {
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+
+      .review-text {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .page-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main__body">
+      <div class="header">
+        <div class="logo-title">
+          <a href="index.html">
+            <img
+              width="50"
+              height="50"
+              src="https://i.pinimg.com/originals/00/08/11/0008115b9b25e0bdfa0fce0c538cc75e.png"
+            />
+          </a>
+          <p>STEP ON</p>
+        </div>
+        <p id="welcome" style="opacity: 0; transition: opacity 0.5s;">Welcome!</p>
+
+        <ul class="ll">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="our_story.html">Our Story</a></li>
+          <li><a href="customer_stories.html">Customer Stories</a></li>
+          <li><a href="index.html#userform">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="stories-container">
+        <h1 class="page-title">Customer Stories</h1>
+        <div class="stories-grid">
+          <!-- Customer Story 1 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah Johnson" class="customer-image">
+              <h3 class="customer-name">Sarah Johnson</h3>
+            </div>
+            <p class="review-text">
+              "The shoes I bought from STEP ON are absolutely amazing! The comfort level is unmatched, and the customer service was exceptional. I'll definitely be coming back for more."
+            </p>
+          </div>
+
+          <!-- Customer Story 2 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael Chen" class="customer-image">
+              <h3 class="customer-name">Michael Chen</h3>
+            </div>
+            <p class="review-text">
+              "As a marathon runner, finding the right shoes is crucial. STEP ON helped me find the perfect pair that supported me through my latest race. Couldn't be happier!"
+            </p>
+          </div>
+
+          <!-- Customer Story 3 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Emma Davis" class="customer-image">
+              <h3 class="customer-name">Emma Davis</h3>
+            </div>
+            <p class="review-text">
+              "The variety of styles available is impressive. I found exactly what I was looking for, and the shipping was super fast. Great experience overall!"
+            </p>
+          </div>
+
+          <!-- Customer Story 4 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="James Wilson" class="customer-image">
+              <h3 class="customer-name">James Wilson</h3>
+            </div>
+            <p class="review-text">
+              "The quality of shoes at STEP ON is outstanding. I've been wearing my new sneakers for months now, and they still look and feel brand new."
+            </p>
+          </div>
+
+          <!-- Customer Story 5 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Sofia Rodriguez" class="customer-image">
+              <h3 class="customer-name">Sofia Rodriguez</h3>
+            </div>
+            <p class="review-text">
+              "I love how easy it is to shop on STEP ON. The size guide was spot-on, and the return process is hassle-free. Will recommend to all my friends!"
+            </p>
+          </div>
+
+          <!-- Customer Story 6 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="David Thompson" class="customer-image">
+              <h3 class="customer-name">David Thompson</h3>
+            </div>
+            <p class="review-text">
+              "The attention to detail in both the product selection and customer service is remarkable. STEP ON has become my go-to place for all my footwear needs."
+            </p>
+          </div>
+
+          <!-- Customer Story 7 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Lisa Martinez" class="customer-image">
+              <h3 class="customer-name">Lisa Martinez</h3>
+            </div>
+            <p class="review-text">
+              "I was hesitant about buying shoes online, but STEP ON's detailed size charts and customer support made it so easy. The shoes fit perfectly, and I'm absolutely in love with them!"
+            </p>
+          </div>
+
+          <!-- Customer Story 8 -->
+          <div class="story-card">
+            <div class="customer-info">
+              <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Robert Kim" class="customer-image">
+              <h3 class="customer-name">Robert Kim</h3>
+            </div>
+            <p class="review-text">
+              "As someone who's particular about athletic footwear, I appreciate the extensive collection STEP ON offers. The filtering options made it simple to find exactly what I needed for my training."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024. All rights reserved.</p>
+        <p>Authors: Rawan, Zahra, Ahmed, Ali</p>
+      </div>
+    </footer>
+  </body>
+</html> 
