@@ -241,10 +241,15 @@ body {
 
 #userform {
   max-width: 800px !important ;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   padding: 40px;
-  background-color: #f4f4f9;
+  background-color: #f4f4f9; 
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.05);
   font-family: "Roboto", sans-serif;
 }
@@ -303,6 +308,7 @@ body {
   margin-top: 20px;
   color: black;
   font-size: 1.2rem;
+  width: 100%;
 }
 
 .item__image {
@@ -507,3 +513,46 @@ body {
 #welcome_avatar {
   display: none;
 }
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .main__body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-title {
+    margin-bottom: 1rem;
+  }
+
+  .ll {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show__case {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item__image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .colors__set, .size__set {
+    justify-content: center;
+  }
+
+  .buy__button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Add more media queries as needed for other breakpoints */
