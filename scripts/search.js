@@ -29,7 +29,7 @@ function displayShoes(shoes) {
         shoesContainer.appendChild(shoeElement);
       });
     });
-  }
+}
   
   // Search functionality
   document.addEventListener("DOMContentLoaded", function () {

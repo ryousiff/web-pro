@@ -16,8 +16,6 @@ const shoesData = [
         { name: "NEW BALANCE2", price: "30 BD", image: "../images/shoes/New/NB2.webp" },
         { name: "NEW BALANCE3", price: "33 BD", image: "../images/shoes/New/NB3.webp" },
         { name: "NEW BALANCE4", price: "35 BD", image: "../images/shoes/New/NB4.webp" },
-
-
       ],
     },
   ];
